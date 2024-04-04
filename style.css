@@ -25,12 +25,18 @@ nav{
     color:  #0055A6;
     height: 60px;
     align-items: center;
-   
+
 }
 
 nav .logo{
-    font-family: 'Rubik Doodle Shadow', sans-serif;
+    font-family: "Koulen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
     letter-spacing: 1px;
+    position: relative;
+    right: 90px;
+
 }
 nav ul{
     display: flex;
@@ -39,15 +45,19 @@ nav ul{
     justify-content: space-between;
     position: relative;
     z-index: 1;
+    color: #000000;
 }
 nav ul li a{
-    color:  #ffffff;
+    color:  #000000;
     text-decoration: none;
-    font-size: 0.8em;   
+    font-size: 35px;  
+    font-family: "Jomhuria", serif;
+    font-weight: 400;
+    font-style: normal; 
 }
 
 nav ul li a:hover{
-    color: #ffffff ;
+    color: #0055A6 ;
 }
 
 
@@ -90,13 +100,13 @@ nav ul li a:hover{
 }
 
 .menu-toggle input:checked ~ span:nth-child(2){
-    background-color: #0055AA;
+    background-color: #ffffff;
     transform: rotate(45deg) translate(-2px, 0px);
     top: 12px; /* Sesuaikan posisi */
     left: 4px; /* Sesuaikan posisi */
 }
 .menu-toggle input:checked ~ span:nth-child(4){
-    background-color: #0055AA;
+    background-color: #ffffff;
     transform: rotate(-45deg) translate(-1px, -2px);
     top: 12px; /* Sesuaikan posisi */
     left: 4px; /* Sesuaikan posisi */
@@ -189,18 +199,19 @@ nav ul li a:hover{
     border-radius: 50%;
     position: relative;
     right: 300px ;
+    top: 2px;
     background-color: #B5C0D0;
 }
 
 .text-home {
     position: relative;
-    left: 45%;
+    left: 40%;
     top: 18%;
     font-family: "Koulen", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 40px;
-    line-height: 15px;
+    line-height: 55px;
 }
 
 .text-home p {
@@ -218,7 +229,7 @@ nav ul li a:hover{
     font-style: normal;
     font-variation-settings:"wdth" 100;
     position: relative;
-    left: 45%;
+    left: 40%;
     top : 17%;
     font-size: 90%;
 }
@@ -263,7 +274,7 @@ nav ul li a:hover{
 .img-home {
     background-color: #0055A6;
     position: relative;
-    bottom:  150px;
+    bottom:  75px;
     padding-bottom: 60px;
     left: 100px;
     width: 408px;
@@ -362,7 +373,6 @@ nav ul li a:hover{
     height: 100px;
     position: relative;
     bottom: 140px;
-  
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -374,7 +384,7 @@ nav ul li a:hover{
     font-size: 50px;
     position: relative;
     left: 100px;
-    bottom: 40px;
+    bottom: -10px;
     color: #ffffff;
 }
 
@@ -555,6 +565,8 @@ nav ul li a:hover{
     font-size: 40px;
     line-height: 15px;
     text-align: center;
+    position: relative;
+    top: 50px;
   }
 
   .portofolio-content .card {
@@ -600,7 +612,7 @@ nav ul li a:hover{
     font-weight: 400;
     font-style: normal;
     font-size: 40px;
-    line-height: 15px;
+    line-height: 50px;
   }
 
   .card1 h4 {
@@ -608,7 +620,7 @@ nav ul li a:hover{
     font-weight: 400;
     font-style: normal;
     font-size: 40px;
-    line-height: 15px;
+    line-height: 50px;
   }
   
   .card .btn {
@@ -668,6 +680,7 @@ nav ul li a:hover{
 .card1-testi {
     border: #000000  solid 3px;
     width: 600px;
+    height: 250px;
     position: relative;
     left: 150px;
     display: flex;
@@ -686,6 +699,17 @@ nav ul li a:hover{
     top: 8px;
 }
 
+.card-img {
+    position: relative;
+    top: 80px;
+}   
+
+.card2-img {
+    position: relative;
+    top: 100px;
+}
+
+
 .card1-testi img {
     width: 100%; 
     height: 100%;
@@ -695,11 +719,17 @@ nav ul li a:hover{
 
 .text-testi h3 {
     display: flex;
+    line-height: 50px;
+}
+
+.text2-testi h3 {
+    line-height: 50px;
 }
 
 .card2-testi {
     border: #000000  solid 3px;
     width: 600px;
+    height: 250px;
     position: relative;
     left: 658px;
     bottom: 20px;
@@ -739,7 +769,7 @@ nav ul li a:hover{
 .star-testi {
     position: relative;
     left: 400px;
-    top: -198px;
+    top: -235px;
 }
 
 .star-testi img {
@@ -749,7 +779,7 @@ nav ul li a:hover{
 .star2-testi {
     position: relative;
     left: 1010px;
-    top: -208px;
+    top: -248px;
 }
 
 .star2-testi img {
@@ -759,7 +789,9 @@ nav ul li a:hover{
 .footerlast {
     background-color: #0055AA;
     width: 100%;
-    padding-bottom: 180px;
+    padding-bottom: 210px;
+    position: relative;
+    top: 200px;
 
 }
 
@@ -861,6 +893,7 @@ nav ul li a:hover{
     width: 80px;
     flex: 1;
     margin-left: 50px;
+    line-height: 40px;
 }
 
 .media-sosmed a {
@@ -1183,6 +1216,16 @@ nav ul li a:hover{
      font-size: 19px;
    }
 
+   .star-testi {
+    position: relative;
+    top: -140px;
+   }
+
+   .star2-testi {
+    position: relative;
+    top: -170px;
+   }
+
    /*footer*/
    .container-contact {
        display: flex;
@@ -1245,8 +1288,10 @@ nav ul li a:hover{
     /*HOME*/
     .menu-toggle{
         display: flex;
+        z-index: 100;
     }
 
+    
     nav ul {
         position: absolute;
         right: 0;
@@ -1264,10 +1309,11 @@ nav ul li a:hover{
     }
 
     nav ul li  {
-        border: #ffffff solid 4px;
-        
-        height: 50%;
-        
+        font-size: 20px;
+    }
+
+    nav ul li a {
+        color: #ffffff;
     }
 
 
