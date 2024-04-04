@@ -1,0 +1,1649 @@
+/*font*/
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&family=Lalezar&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&family=Koulen&family=Lalezar&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&family=Koulen&family=Lalezar&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&family=Koulen&family=Lalezar&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orelega+One&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+
+body {
+    overflow-x:hidden;
+}
+
+/*Header*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    background-color: transparent;
+    justify-content: space-around;
+    /* padding: 20px 0; */
+    color:  #0055A6;
+    height: 60px;
+    align-items: center;
+   
+}
+
+nav .logo{
+    font-family: 'Rubik Doodle Shadow', sans-serif;
+    letter-spacing: 1px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+nav ul li a{
+    color:  #ffffff;
+    text-decoration: none;
+    font-size: 0.8em;   
+}
+
+nav ul li a:hover{
+    color: #ffffff ;
+}
+
+
+/* hamburger menu */
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle input{
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -6px;
+    top: -3px;
+    opacity: 0;
+    z-index: 2;
+}
+
+.menu-toggle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #0055AA;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+
+
+/* Menu Annimation */
+.menu-toggle span:nth-child(2){
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4){
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2){
+    background-color: #0055AA;
+    transform: rotate(45deg) translate(-2px, 0px);
+    top: 12px; /* Sesuaikan posisi */
+    left: 4px; /* Sesuaikan posisi */
+}
+.menu-toggle input:checked ~ span:nth-child(4){
+    background-color: #0055AA;
+    transform: rotate(-45deg) translate(-1px, -2px);
+    top: 12px; /* Sesuaikan posisi */
+    left: 4px; /* Sesuaikan posisi */
+}
+.menu-toggle input:checked ~ span:nth-child(3){
+    transform: scale(0);
+    opacity: 0;
+}
+
+
+
+.home-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -3%;
+}
+
+.home-page h2 {
+    color: #21409A;
+    font-family: "Jomhuria", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    letter-spacing: 3px;
+    position: relative;
+    right: -20px;
+  
+}
+
+.container-nav {
+    text-align: right; /* Mengatur teks ke kanan */
+    
+}
+
+.navbar ul {
+    list-style-type: none; /* Menghapus bullet point default */
+    margin: 0%;
+    padding: 0%;
+    
+}
+
+.navbar li {
+    display: inline; /* Menjadikan elemen <li> menjadi sejajar */
+}
+
+.navbar li a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: #21409A;
+    font-family: "Jomhuria", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    transition: all 0.5s ease-in;
+
+}
+
+.navbar li a:hover {
+    color: black;
+}
+
+/* Menambahkan warna latar belakang saat item-menu dihover */
+.navbar li a:hover {
+    background-color: #f2f2f2;
+}
+
+/* Membuat item-menu yang aktif menjadi berbeda tampilan */
+.navbar li a.active {
+    background-color: #ffffff;
+}
+
+
+/*home*/
+
+#home {
+    display: flex;
+    align-items: center;
+}
+
+
+/*opening*/
+
+
+.opening {
+    background-color:#21409A;
+    width: 890px; /* Tentukan lebar div */
+    height: 863px; /* Tentukan tinggi div */
+    border-radius: 50%;
+    position: relative;
+    right: 300px ;
+    background-color: #B5C0D0;
+}
+
+.text-home {
+    position: relative;
+    left: 45%;
+    top: 18%;
+    font-family: "Koulen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 15px;
+}
+
+.text-home p {
+    font-size: 40px;
+}
+
+.text-home h3 {
+    color: #21409A;
+}
+
+.button-font {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    position: relative;
+    left: 45%;
+    top : 17%;
+    font-size: 90%;
+}
+
+.button-open button {
+    position: relative;
+    top: 40px;
+    left: 10%;
+    background-color: #0055A6;
+    border-radius: 20px;
+    padding:  3px 15px;
+    font-family: "Koulen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    
+}
+
+
+.button-open button a {
+    color: inherit; /* Mengambil warna teks dari induknya */
+    text-decoration: none;
+    transition: all 0.5s ease-in;
+}
+
+.button-open button a:hover {
+    color: #ffffff;
+}
+
+.button-open button:hover {
+    background-color: #000000;
+}
+
+
+/*image home*/
+
+
+
+.img-home {
+    background-color: #0055A6;
+    position: relative;
+    bottom:  150px;
+    padding-bottom: 60px;
+    left: 100px;
+    width: 408px;
+    height: 568px;
+    border-top-left-radius: 250px;
+    border-top-right-radius: 300px;
+    border-bottom-right-radius: 200px;
+    border-bottom-left-radius: 20px;
+   
+  }
+  
+  
+
+
+  
+.image-container {
+    position: relative;
+    bottom: 82px;
+    right: 3%;
+}
+
+.icon-html {
+    display: flex;
+}
+
+.icon-html img {
+    width: 100px;
+    height: 100px;
+}
+
+@keyframes example {
+    0%   { transform: translate(0px, 0px); }
+    25%  { transform: translate(20px, 0px); }
+    50%  { transform: translate(20px, 20px); }
+    75%  { transform: translate(0px, 20px); }
+    100% { transform: translate(0px, 0px); }
+}
+
+#icon1 {
+    position: relative;
+    top: 50px;
+    right: 8%;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#icon2 {
+    width:  90px;
+    height:  110px;
+    position: relative;
+    bottom: 30px;
+    right: 2%;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
+}
+
+#icon3 {
+    width: 140px;
+    height: 110px;
+    position: relative;
+    bottom: 30px;
+    left: 5%;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#icon4 {
+    width: 160px;
+    height: 100px;
+    position: relative;
+    top: 55px;
+    right: 5%;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.image-container img {
+    width: 409px;
+    height: 600px;
+
+}
+
+/* about */
+
+/*header about*/
+
+ 
+.header-about {
+    background-color: #0055A6;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    bottom: 140px;
+  
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header-about h2 {
+    font-family: "Koulen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    position: relative;
+    left: 100px;
+    bottom: 40px;
+    color: #ffffff;
+}
+
+.content-about {
+    border: 1px solid black;
+  outline-style: solid;
+  outline-color: rgb(0, 0, 0);
+  outline-width: thin;
+  border-style: solid;
+  position: relative;
+  bottom: 100px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  width: 1100px;
+  height: 700px;
+  border-width: 4px;
+  border-top-left-radius: 125px;
+  border-bottom-left-radius: 55px;
+  border-top-right-radius: 55px;
+  border-bottom-right-radius: 55px;
+}
+
+
+.about-page .content-about {
+    position: relative;
+    left: 200px;
+}
+.profile-pic {
+    position: relative;
+    width: 700px;
+    height: 700px;
+    background-color: #21409A;
+    border-top-right-radius: 120px;
+    border-top-left-radius: 120px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 120px;
+   
+    
+}
+
+.content-about .profile-pic .triangle {
+    position: relative;
+    left: 50px;
+}
+
+.triangle {
+    display: flex;
+    border-bottom-left-radius: 20px;
+    position: relative;
+    top: 50px;
+    left: 150px;
+    width: 400px;
+    height: 600px;
+    background-color: #0055A6;
+    border-top-right-radius: 120px;
+    border-top-left-radius: 120px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 120px;
+}
+
+.shadow-img {
+    display: flex;
+    position: relative;
+    right: 180px;
+}
+
+#pic1:first-child {
+    position: relative;
+    left: 170px;
+    position: relative; /* Diperlukan untuk mengatur z-index */
+    z-index: 1; /* Membuat gambar pertama berada di depan */
+}
+
+#pic2  {
+    position: relative;
+    right: 210px;
+}   
+
+.text-about {
+    border: #000000 solid 3px ;
+    height: 400px;
+    width: 700px;
+    margin-left: 53px;
+    margin-right: 60px;
+    border-radius: 50px;
+}
+
+.detail-about {
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    font-size: 20px;
+    font-family: "Orelega One", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.text-about .detail-about p a {
+    color: #0055A6;
+    
+}
+
+.skill-page {
+    background-color: #0055A6;
+    justify-content: center;
+    align-items: center; 
+    height: 80vh; 
+    width: 100%;
+}
+
+.main-skill {
+    background-color: #ffffff;
+    width: 80%;
+    height: 55%;
+    margin: auto;
+    position: relative;
+    top : 140px;
+    border-radius: 50px;
+}
+
+.conten-skill {
+    position:  relative;
+    top: 80px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    display: grid;
+    column-gap: 150px;
+    grid-template-columns: auto auto auto 100px;
+    margin-right: -55px;
+}
+
+.conten-skill img {
+   width: 100px;
+}
+
+.conten-skill .img-skil {
+    width: 240px;
+    margin-left: -80px;
+}
+
+.conten-skill .img-skil1 {
+    width: 240px;
+   position: relative;
+   right: 128px; 
+}
+
+.star-skill {
+    position: relative;
+    top: 80px;
+    left: 10px;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    display: grid;
+    column-gap: 150px;
+    grid-template-columns: auto auto auto auto;
+}
+
+.star-skill img {
+    width: 100px;
+    position: relative;
+    right: 30px;
+}
+
+/*portofolio*/
+.portofolio-content {
+    margin: 100px;
+  }
+  
+  .header h2 {
+    font-family: "Koulen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 15px;
+    text-align: center;
+  }
+
+  .portofolio-content .card {
+    position: relative;
+    left: 80px;
+  }
+
+  .portofolio-content .card1 {
+    position: relative;
+    left: 700px;
+  }
+
+  .card {
+    border: 4px solid #1e1e1e;
+    border-radius: 24px;
+    width: 508px;
+  }
+
+  .card1 {
+    border: 4px solid #1e1e1e;
+    border-radius: 24px;
+    width: 508px;
+  }
+
+  
+  
+  .card-content {
+    margin: 24px;
+  }
+  
+  .card-content img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .card-content .gobo {
+    border: #000000 4px solid;
+    border-radius: 50px;
+  }
+
+  .card h4 {
+    font-family: "Koulen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 15px;
+  }
+
+  .card1 h4 {
+    font-family: "Koulen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 15px;
+  }
+  
+  .card .btn {
+    display: flex;
+    justify-content: center;
+    margin: 36px;
+    background-color: #21409A;
+    border-radius: 40px;
+  }
+
+  .card1 .btn {
+    display: flex;
+    justify-content: center;
+    margin: 36px;
+    background-color: #21409A;
+    border-radius: 40px;
+  }
+  
+  .card button {
+    color: #ffffff;
+    font-size: 20px;
+    width: 300px;
+    height: 52px;
+    background-color: var(--primary);
+    border-radius: 7px;
+    border: 0;
+    font-family: "Koulen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 15px;
+  }
+  .card1 button {
+    color: #ffffff;
+    font-size: 20px;
+    width: 300px;
+    height: 52px;
+    background-color: var(--primary);
+    border-radius: 7px;
+    border: 0;
+    font-family: "Koulen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 15px;
+  }
+
+.header-testi h2 {
+    font-family: "Koulen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 15px;
+    text-decoration: underline;
+    position: relative;
+    left: 100px;
+}
+
+.card1-testi {
+    border: #000000  solid 3px;
+    width: 600px;
+    position: relative;
+    left: 150px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+.circle-image {
+    width: 410px; 
+    height: 100px; 
+    overflow: hidden; 
+    border-radius: 50%; 
+    margin-right: 20px; 
+    position: relative;
+    left: 10px;
+    top: 8px;
+}
+
+.card1-testi img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+    object-position: center; 
+}
+
+.text-testi h3 {
+    display: flex;
+}
+
+.card2-testi {
+    border: #000000  solid 3px;
+    width: 600px;
+    position: relative;
+    left: 658px;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+.circle2-image {
+    width: 300px; 
+    height: 80px; 
+    overflow: hidden; 
+    border-radius: 50%; 
+    margin-right: 20px; 
+    position: relative;
+    left: 10px;
+    top: 8px;
+}
+.card2-testi img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    object-position: center; 
+}
+
+.content-testi a {
+    font-weight: bold;
+    position: relative;
+    bottom: 35px;
+}
+
+.content-testi .star-testi img {
+    position: relative;
+    left: 100px;
+}
+
+.star-testi {
+    position: relative;
+    left: 400px;
+    top: -198px;
+}
+
+.star-testi img {
+    width: 40px;
+}
+
+.star2-testi {
+    position: relative;
+    left: 1010px;
+    top: -208px;
+}
+
+.star2-testi img {
+    width: 40px;
+}
+
+.footerlast {
+    background-color: #0055AA;
+    width: 100%;
+    padding-bottom: 180px;
+
+}
+
+
+.container-contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.consul {
+    position: relative;
+    right: 100px;
+    flex: 1;
+}
+
+.consul h2 {
+    font-family: "Orelega One", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    position: relative;
+    left: 200px;
+    top: 30px;
+    font-size: 30px;
+}
+
+.consul,
+    .social-addres {
+        flex: 1;
+    }
+
+.form-contact form {
+  
+    border: 3px;
+    position: relative;
+    left: 200px;
+    top: 50px;
+}
+
+.form-contact form label {
+    font-family: "Koulen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 15px;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.form-contact form label a {
+    position: relative;
+    bottom: 35px;
+    left: 45px;
+    
+}
+
+#pesan {
+    width: 550px;
+    height: 109px;
+}
+
+
+.form-contact form input {
+    border: #ffffff solid 2px;
+    border-radius: 15px;
+    height: 50px;
+    width: 230px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    font-size: 15px;
+}
+
+.form-contact form button {
+    background-color: #ffffff;
+    height: 30px;
+    width: 70px;
+    border: #ffffff solid 2px;
+    border-radius: 5px;
+}
+
+.form-contact form button a {
+    font-family: "Koulen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 15px;
+    font-size: 20px;
+    color: inherit; 
+    text-decoration: none; 
+}
+
+.social-addres {
+    position: relative;
+    left: 50px;
+    top: 100px;
+    color: #ffffff;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-size: 20px;
+    width: 80px;
+    flex: 1;
+    margin-left: 50px;
+}
+
+.media-sosmed a {
+    color: #ffffff;
+    
+}
+
+.media-sosmed a i {
+    margin-right: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top : 160px;
+    background-color: #21409A;
+    height: 110px;
+    margin-bottom: -50px;
+    color: #ffffff;
+}
+
+.footer h1 {
+    position: relative;
+    right: 200px;
+    top: 20px;
+}
+
+.footer p {
+    position: relative;
+    left: 200px;
+    top: 30px;
+}
+
+
+
+/*style untuk Tablet*/
+@media screen and (max-width: 1024px) {
+    /*HOME*/
+
+    .nav {
+        padding: 15px 50px;
+      }
+    .btn {
+        display: none;
+    }
+
+    .home-page {
+       display: flex;
+       align-items: start; 
+   }
+   
+   .home-page h2 {
+       font-size: 50px;
+       letter-spacing: 2px;
+       margin-bottom: 20px;
+       position: relative;
+       left: -30px;
+       top: 20px;
+   }
+
+   .container-nav {
+       text-align: center;
+       margin-top: 20px;
+       float: none;
+   }
+
+   .navbar {
+       display: flex;
+       justify-content: center;
+   }
+
+   .navbar li {
+       display: inline;
+       margin: 0 2px; 
+       position: relative;
+   }
+
+   .navbar li a {
+       font-size: 40px;
+       position: relative;
+       top: 40px;
+       padding: 8px;
+   }
+
+   .opening {
+       position: relative;
+       left: 70px;
+       top: 170px;
+       z-index: 2;
+       background-color: transparent;
+   }
+
+   .opening .text-home h3 {
+       font-size: 50px;
+       white-space: nowrap; 
+
+   }
+
+   .button-font {
+       color: #ffffff;
+       width: 300px;
+   }
+
+   .text-home p {
+       color: #ffffff;
+       font-size: 40px;
+   }
+
+   
+
+   .smal-font {
+       font-size: 20px;
+       width: 300px;
+   }
+
+   .img-home {
+       position: relative;
+       left: -280px;
+       bottom: 50px;
+       width: 400px;
+       height: 550px;
+   }
+
+   .icon-html {
+       position: relative;
+       left: 8px;
+
+   }
+
+   .image-container {
+       position: relative;
+       right: 60px;
+   }
+
+   .image-container img {
+       
+       position: relative;
+       bottom: 20px;
+       left: 40px;
+      
+   }
+
+   .button-open {
+       justify-content: center;
+       position: relative;
+       left: 90px;
+   }
+
+   /*about*/
+  
+   
+   .header-about {
+       height: 50px;
+       width: 110%;
+   }
+
+   .header-about h2 {
+       font-size: 40px;
+   }
+
+   .about-page .content-about {
+       width: 90%;
+       position: relative;
+      left: 45px;
+   }
+
+   .profile-pic {
+       width: 500px;
+   }
+
+    .triangle {
+       margin-right: 20px;
+       position: relative;
+       left: -100px;
+       width: 400px;
+   }
+
+   .shadow-img img {
+    position: relative;
+    left: -210px;
+   }
+
+
+   .text-about {
+       height: 500px;
+   }
+
+   /*skills*/
+   .skill-page {
+       height: 500px;
+   }
+
+   .main-skill {
+       height: 300px;
+   }
+
+   .conten-skill {
+       position: relative;
+       top: 50px;
+       right: 25px;
+   }
+
+   .conten-skill img {
+       margin-bottom: 20px;
+       position: relative;
+       left: 53px;
+       margin: -10px;
+       margin-right: -10px;
+   }
+
+   .img-skil {
+       position: relative;
+       right: 200px;
+       bottom: 15px;
+       margin-left: -90px;
+   }
+
+   .conten-skill .img-skil1 {
+       position: relative;
+       left: -100px;
+       bottom: 15px;
+       margin-left: -20px;
+   }
+
+   .star-skill {
+       display: flex; 
+       align-items: center; 
+       margin-right: -10px;
+   }
+
+   .star-skill img{
+       margin-bottom: 50px;
+       margin: 0 -15px;
+       position: relative;
+       left: -15px;
+       bottom: 30px;
+   }
+
+   /*portofolio*/
+   .portofolio-content {
+       display: flex;
+       flex-direction: column;
+   }
+
+   .portofolio-content .card{
+       position: relative;
+       left: 140px;
+       margin-bottom: 30px;
+   }
+
+   .portofolio-content .card1 {
+        position: relative;
+        top: 30px;
+        left: 140px;
+   }
+
+   .card-content {
+       font-size: 25px;
+   }
+
+   .btn button {
+       font-size: 30px;
+   }
+
+   /*Testimoni*/
+
+   .card1-testi {
+    position: relative;
+    left: -120px;
+   }
+
+   .card2-testi {
+    position: relative;
+
+   }
+
+   .card-img {
+       position: relative;
+       left: 250px;
+   }
+
+   .card2-img {
+       position: relative;
+       right: 370px;
+   }
+
+   .card-img .star-testi img {
+       position: relative;
+       bottom: 90px;
+       left: -150px;
+
+   }
+   .card2-img .star2-testi img {
+        position: relative;
+        bottom: 80px;
+        
+   }
+
+   .text-testi h3 {
+       font-size: 30px;
+   }
+
+   .text-testi a {
+       font-size: 20px;
+   }
+
+   .text-testi p {
+     font-size: 19px;
+   }
+   .text2-testi h3 {
+       font-size: 25px;
+   }
+
+   .text2-testi a {
+       font-size: 20px;
+   }
+
+   .text2-testi p {
+     font-size: 19px;
+   }
+
+   /*footer*/
+   .container-contact {
+       display: flex;
+       
+   }
+
+   .form-contact{
+    width: 500px;
+   }
+
+   .form-contact form label {
+       font-size: 30px;
+   }
+
+   
+
+   .form-contact form input {
+    width: 150px;
+    height: 40px;
+   }
+
+    #pesan {
+    width: 410px;
+   }
+
+   .form-contact form button {
+    width: 20%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    }
+
+    .form-contact form button:hover {
+        background-color: #0056b3;
+    }
+
+   .social-addres {
+       position: relative;
+       left: 5px;
+       top: 140px;
+       font-size: 17px;
+   }
+
+   .footer h1 {
+       position: relative;
+       left: -70px;
+   }
+
+   .footer p {
+       position: relative;
+       left: 50px;
+   }
+}
+
+/* Style untuk handphone */
+@media screen and (max-width: 768px) {
+
+    /*HOME*/
+    .menu-toggle{
+        display: flex;
+    }
+
+    nav ul {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        width: 50%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: #0055AA;
+        align-items: center;
+        z-index: -1;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+
+    nav ul li  {
+        border: #ffffff solid 4px;
+        
+        height: 50%;
+        
+    }
+
+
+    nav ul.slide{
+        transform: translateX(0);
+        opacity: 1;
+        z-index: 3;
+    }
+
+    
+    .home-page {
+        position: relative;
+        left: 100px;
+        align-items: start; 
+
+    }
+    
+    .home-page h2 {
+        font-size: 40px;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+    }
+
+
+
+    .opening {
+        position: relative;
+        right: 70px;
+        top: 100px;
+        z-index: 2;
+        background-color: transparent;
+    }
+
+    .opening .text-home h3 {
+        font-size: 30px;
+        white-space: nowrap; 
+
+    }
+
+    .button-font {
+        color: #000000;
+    }
+
+   
+
+    .text-home p {
+        color: #000000;
+        font-size: 30px;
+        
+    }
+
+    .img-home {
+        position: relative;
+        left: -240px;
+        width: 300px;
+        height: 450px;
+    }
+
+    .icon-html {
+        position: relative;
+        left: 8px;
+
+    }
+
+    .icon-html img {
+        width: 60px;
+        height: 80px;
+    }
+
+    #icon2 {
+        width: 60px;
+        height: 80px;
+    }
+
+    #icon3 {
+        width: 90px;
+        height: 80px;
+    }
+
+    #icon4 {
+        width: 100px;
+        height: 80px;
+    }
+
+    .image-container {
+        position: relative;
+        right: 60px;
+    }
+
+    .image-container img {
+        width: 400px;
+        position: relative;
+        bottom: 40px;
+        height: 550px;
+    }
+
+    .button-open {
+        justify-content: center;
+        position: relative;
+        left: 50px;
+    }
+    
+    /*ABOUT*/
+    .about-page {
+        flex-direction: column;
+    }
+    
+    .header-about {
+        height: 50px;
+        width: 430px;
+    }
+
+    .header-about h2 {
+        font-size: 40px;
+    }
+
+    .content-about {
+        width: 400px;
+        position: relative;
+        right: 270px;
+        top: 500px;
+        border-color: transparent ;
+        border: none solid 0px;
+        border-radius: transparent;
+        padding-bottom: 400px;
+        flex-direction: column-reverse;
+        
+    }
+
+    .profile-pic {
+        position: relative;
+        left: 82px;
+        height: 520px;
+        bottom: 700px;
+        width: 380px;
+        border-color: transparent;
+    }
+
+   .triangle {
+        background-color: transparent;
+   }
+    
+    .shadow-img {
+        position: relative;
+        right: 60px;
+        bottom: 138px;
+        border-color: transparent;
+    }
+
+    .text-about {
+        position: relative;
+        left: 80px;
+        top: 350px;
+        width: 350px;
+        height: 800px;
+        font-size: 20px;
+    }
+
+    .text-about p {
+        position: relative;
+        bottom: 60px;
+    }
+
+    /*Skill*/
+    .skill-page {
+        width: 355px;
+        height: 900px;
+    }
+
+    .main-skill {
+        display: flex; /* Mengatur .main-skill menjadi flex container */
+      
+        position: relative;
+        left: -3px;
+        bottom: 3000px;
+        height: 700px;
+        
+    }
+
+    .conten-skill {
+        display: flex; /* Mengatur .conten-skill menjadi flex container */
+        flex-direction: column; /* Menjadikan elemen sejajar ke bawah */
+        align-items: center; /* Menyelaraskan elemen secara horizontal */
+        position: relative;
+        right: 110px;
+        bottom: 100px;
+    }
+
+    .conten-skill img {
+        margin-bottom: 20px;
+        position: relative;
+        left: 50px;
+    }
+
+    .img-skil {
+        position: relative;
+        right: 200px;
+        bottom: 15px;
+        margin-right: -90px;
+    }
+
+    .img-skil1 {
+        position: relative;
+        left: 5px;
+        bottom: 15px;
+    }
+
+    .star-skill {
+        display: flex; /* Mengatur .star-skill menjadi flex container */
+        flex-direction: column; /* Menjadikan elemen sejajar ke bawah */
+        align-items: center; /* Menyelaraskan elemen secara horizontal */
+    }
+
+    .star-skill img{
+        margin-bottom: 50px;
+    }
+
+    /*Protofolio*/
+
+    .header h2{
+        position: relative;
+        right: 30px;
+    }
+
+    .portofolio-content {
+        
+        flex-direction: column; /* Mengatur tata letak menjadi horizontal */
+    }
+
+    .card {
+        width: 330px; /* Mengatur lebar kartu menjadi 100% dari lebar layar */
+        margin-bottom: 20px; /* Memberikan margin bawah antara setiap kartu */
+        position: relative;
+        right: 89Px ;
+        
+    }
+
+    .card1 {
+        width: 330px;
+        position: relative;
+        left: -89px;
+    }
+
+    .card-content h4 {
+        font-size: 20px;
+        letter-spacing: 1px; 
+    }
+
+    /*Testimoni*/
+
+    .content-testi {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .testimoni h2 {
+        position: relative;
+        left : 80px;
+    }
+
+    .card-img {
+        position: relative;
+        right: 193px;
+    }
+
+    .card1-testi {
+        width: 334px;
+        height: 583px;
+    }
+
+    .circle-image {
+        width: 1100px;
+    }
+
+    .text-testi h3 {
+        font-size: 25px;
+    }
+
+    .text-testi p {
+        font-size: 20px;
+        position: relative;
+        right: 50px;
+        top: 20px;
+    }
+
+    .card-img .star-testi img {
+        position: relative;
+        left: -135px;
+        top: 130px;
+    }
+    
+    .card2-testi {
+        position: relative;
+        left: 5px;
+        width: 334px;
+        height: 583px;
+    }
+
+    .circle2-image {
+        width: 1000px;
+        height: 100px;
+    }
+
+    .text2-testi h3 {
+        font-size: 25px;
+    }
+
+    .text2-testi p {
+        font-size: 20px;
+        position: relative;
+        right: 50px;
+        top: 20px;
+    }
+
+    .card2-img .star2-testi img {
+        position: relative;
+        right: 950px;
+        top: 130px;
+    }
+    
+    /*footer*/
+
+    .footerlast {
+        width: 100%;
+        position: relative;
+        right: 18px;
+    }
+
+    .container-contact {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        right: 180px;
+    }
+
+    .form-contact form {
+        width: 300px;
+    }
+
+    .form-contact form label a {
+        position: relative;
+        bottom: 2px;
+        left: -2px;
+        z-index: 1;
+    }
+
+    .form-contact form #pesan {
+        width: 300px;
+    }
+
+    .form-contact form button  {
+        position: relative;
+        left: 30px;
+    }
+
+    .social-addres {
+        position: relative;
+        left: 195px;
+        font-size: 15px;
+        width: 350px;
+    }
+
+    .media-sosmed {
+        position: relative;
+        
+        top: 40px;
+    }
+
+    .footer p {
+        position: relative;
+        left: -150px;
+        top: 50px;
+        font-size: 13px;
+        width: 400px;
+    }
+
+}
+
+
