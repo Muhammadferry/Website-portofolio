@@ -48,7 +48,7 @@ nav ul{
     color: #000000;
 }
 nav ul li a{
-    color:  #000000;
+    color:  #0055AA;
     text-decoration: none;
     font-size: 35px;  
     font-family: "Jomhuria", serif;
@@ -57,7 +57,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color: #0055A6 ;
+    color: #000000 ;
 }
 
 
@@ -1285,16 +1285,33 @@ nav ul li a:hover{
 /* Style untuk handphone */
 @media screen and (max-width: 768px) {
 
+    body {
+        overflow-x:hidden;
+    }
+    
+    
     /*HOME*/
     .menu-toggle{
         display: flex;
         z-index: 100;
+        position: relative;
+        right: 80px;
     }
 
+    nav {
+        position: relative;
+        left: 100px;
+    }
+
+    nav .logo {
+        font-size: 25px;
+        position: relative;
+        right: 150px;
+    }
     
     nav ul {
         position: absolute;
-        right: 0;
+        right: 100px;
         top: 0;
         height: 100vh;
         width: 50%;
@@ -1321,7 +1338,10 @@ nav ul li a:hover{
         transform: translateX(0);
         opacity: 1;
         z-index: 3;
+        
     }
+
+   
 
     
     .home-page {
@@ -1341,8 +1361,8 @@ nav ul li a:hover{
 
     .opening {
         position: relative;
-        right: 70px;
-        top: 100px;
+        left: -50px;
+        top: 160px;
         z-index: 2;
         background-color: transparent;
     }
@@ -1354,20 +1374,20 @@ nav ul li a:hover{
     }
 
     .button-font {
-        color: #000000;
+        color: #ffffff;
     }
 
    
 
     .text-home p {
-        color: #000000;
+        color: #ffffff;
         font-size: 30px;
         
     }
 
     .img-home {
         position: relative;
-        left: -240px;
+        left: -230px;
         width: 300px;
         height: 450px;
     }
@@ -1400,7 +1420,7 @@ nav ul li a:hover{
 
     .image-container {
         position: relative;
-        right: 60px;
+        right: 100px;
     }
 
     .image-container img {
@@ -1419,36 +1439,41 @@ nav ul li a:hover{
     /*ABOUT*/
     .about-page {
         flex-direction: column;
+        display: flex;
+
     }
     
     .header-about {
-        height: 50px;
-        width: 430px;
+        width: 100%;
     }
 
     .header-about h2 {
         font-size: 40px;
+        position: relative;
+        bottom: 10px;
+        left: 40px;
     }
 
     .content-about {
         width: 400px;
         position: relative;
-        right: 270px;
+        left: 470px;
         top: 500px;
-        border-color: transparent ;
-        border: none solid 0px;
+        border-color: none ;
+        border: none ;
         border-radius: transparent;
         padding-bottom: 400px;
         flex-direction: column-reverse;
-        
+        outline: none;
     }
 
     .profile-pic {
         position: relative;
-        left: 82px;
+        right: 20px;
         height: 520px;
         bottom: 700px;
         width: 380px;
+        margin-bottom: 30px;
         border-color: transparent;
     }
 
@@ -1458,28 +1483,34 @@ nav ul li a:hover{
     
     .shadow-img {
         position: relative;
-        right: 60px;
-        bottom: 138px;
+        right: 240px;
+        bottom: 130px;
         border-color: transparent;
     }
 
+    
+
     .text-about {
         position: relative;
-        left: 80px;
+        left: -20px;
         top: 350px;
         width: 350px;
         height: 800px;
         font-size: 20px;
     }
 
+    .detail-about {
+        height: 500px;
+    }
+
     .text-about p {
         position: relative;
-        bottom: 60px;
+        bottom: 20px;
     }
 
     /*Skill*/
     .skill-page {
-        width: 355px;
+        width: 100%;
         height: 900px;
     }
 
@@ -1498,26 +1529,23 @@ nav ul li a:hover{
         flex-direction: column; /* Menjadikan elemen sejajar ke bawah */
         align-items: center; /* Menyelaraskan elemen secara horizontal */
         position: relative;
-        right: 110px;
-        bottom: 100px;
+        right: 80px;
     }
 
     .conten-skill img {
         margin-bottom: 20px;
-        position: relative;
-        left: 50px;
     }
 
-    .img-skil {
+    .conten-skill .img-skil {
         position: relative;
-        right: 200px;
+        left: 90px;
         bottom: 15px;
-        margin-right: -90px;
+        
     }
 
-    .img-skil1 {
+    .conten-skill .img-skil1 {
         position: relative;
-        left: 5px;
+        left: 60px;
         bottom: 15px;
     }
 
@@ -1525,6 +1553,8 @@ nav ul li a:hover{
         display: flex; /* Mengatur .star-skill menjadi flex container */
         flex-direction: column; /* Menjadikan elemen sejajar ke bawah */
         align-items: center; /* Menyelaraskan elemen secara horizontal */
+        position: relative;
+        left: 50px;
     }
 
     .star-skill img{
@@ -1539,8 +1569,9 @@ nav ul li a:hover{
     }
 
     .portofolio-content {
-        
         flex-direction: column; /* Mengatur tata letak menjadi horizontal */
+        position: relative;
+        right: 200px;
     }
 
     .card {
@@ -1568,6 +1599,7 @@ nav ul li a:hover{
         display: flex;
         flex-direction: column;
         position: relative;
+        right: 100px;
     }
     .testimoni h2 {
         position: relative;
@@ -1588,6 +1620,7 @@ nav ul li a:hover{
         width: 1100px;
     }
 
+
     .text-testi h3 {
         font-size: 25px;
     }
@@ -1601,13 +1634,13 @@ nav ul li a:hover{
 
     .card-img .star-testi img {
         position: relative;
-        left: -135px;
-        top: 130px;
+        left: -435px;
+        bottom: -20px;
     }
     
     .card2-testi {
         position: relative;
-        left: 5px;
+        left: 500px;
         width: 334px;
         height: 583px;
     }
@@ -1630,38 +1663,45 @@ nav ul li a:hover{
 
     .card2-img .star2-testi img {
         position: relative;
-        right: 950px;
-        top: 130px;
+        right: 420px;
+        top: 50px;
     }
     
     /*footer*/
 
     .footerlast {
-        width: 100%;
-        position: relative;
-        right: 18px;
+        width: 100vh;
+        height: 100%;     
+        position: relative;   
     }
 
     .container-contact {
         display: flex;
         flex-direction: column;
         position: relative;
-        right: 180px;
+        right: 70px;
+        
     }
 
     .form-contact form {
-        width: 300px;
+        width: 700px;
     }
+
 
     .form-contact form label a {
         position: relative;
-        bottom: 2px;
-        left: -2px;
+        bottom: 30px;
+        left: -20px;
         z-index: 1;
     }
 
+    #email {
+        position: relative;
+        right: 90px;
+    }
+
     .form-contact form #pesan {
-        width: 300px;
+        width: 320px;
     }
 
     .form-contact form button  {
@@ -1671,22 +1711,33 @@ nav ul li a:hover{
 
     .social-addres {
         position: relative;
-        left: 195px;
+        left: 65px;
+        bottom: -70px;
         font-size: 15px;
         width: 350px;
     }
 
     .media-sosmed {
         position: relative;
-        
         top: 40px;
+    }
+
+    .footer {
+        position: relative;
+        top: 200px;
+    }
+
+    .footer h1 {
+        font-size: 20px;
+        position: relative;
+        top: 50px;
     }
 
     .footer p {
         position: relative;
-        left: -150px;
+        left: -200px;
         top: 50px;
-        font-size: 13px;
+        font-size: 10px;
         width: 400px;
     }
 
