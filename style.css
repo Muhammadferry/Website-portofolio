@@ -607,6 +607,10 @@ nav ul li a:hover{
     border-radius: 50px;
   }
 
+  .card-content .btn button a {
+  text-decoration: none; /* Menghilangkan garis bawah */
+  color: inherit;
+   }
   .card h4 {
     font-family: "Koulen", sans-serif;
     font-weight: 400;
@@ -841,11 +845,27 @@ nav ul li a:hover{
     text-align: center;
 }
 
+#nomori  {
+    position: relative;
+    bottom: 25px;
+    left: 5px;
+  
+}
+
 .form-contact form label a {
     position: relative;
     bottom: 35px;
     left: 45px;
     
+}
+
+
+
+#nomor {
+    width: 550px;
+    position: relative;
+    right: 115px;
+    top: 10px;
 }
 
 #pesan {
@@ -1245,6 +1265,23 @@ nav ul li a:hover{
    .form-contact form input {
     width: 150px;
     height: 40px;
+   }
+
+   #email {
+    position: relative;
+    right: 25px;
+   }
+
+   #nomori {
+    position: relative;
+    top: -2px;
+   }
+
+   #nomor {
+    position: relative;
+    left: -5px;
+    top: -3px;
+    width: 410px;
    }
 
     #pesan {
@@ -1707,6 +1744,19 @@ nav ul li a:hover{
     .form-contact form button  {
         position: relative;
         left: 30px;
+    }
+
+    #nomori {
+        position: relative;
+
+    }
+
+    #nomor {
+        width: 320px;
+        margin-bottom: 60px;
+        position: relative;
+        top: 30px;
+        left: -170px;
     }
 
     .social-addres {
